@@ -12,9 +12,9 @@ import {
   NavbarMenuItem,
   NavbarMenu,
 } from "@nextui-org/react";
-import { MENU_ITEMS } from "../constants/string";
+import { MENU_ITEMS } from "../constants/constants";
 
-export default function NavbarComp(props) {
+export default function NavbarCmp(props) {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   const toggle = () => {
@@ -26,7 +26,8 @@ export default function NavbarComp(props) {
       <Navbar
         onMenuOpenChange={setIsMenuOpen}
         isMenuOpen={isMenuOpen}
-        className="w-full"
+        className="bg-white"
+        shouldHideOnScroll
       >
         <NavbarContent>
           <NavbarMenuToggle
