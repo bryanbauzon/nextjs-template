@@ -63,7 +63,7 @@ export default function NavbarComp(props) {
                       : "foreground"
                   }
                   className="w-full"
-                  href="#test"
+                  href={`#${item.toLowerCase()}`}
                   size="lg"
                   onClick={() => {
                     toggle();
